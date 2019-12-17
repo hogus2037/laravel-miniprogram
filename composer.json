@@ -1,0 +1,31 @@
+{
+    "name": "hogus/laravel-miniprogram",
+    "description": "各平台小程序集合",
+    "keywords": ["miniprogram", "mini-program", "WeChat", "TouTiao", "BaiDU"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "hogus",
+            "email": "hogus2037@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.0",
+        "guzzlehttp/guzzle": "^6.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "Hogus\\LaravelMiniProgram\\": "src"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Hogus\\LaravelMiniProgram\\ServiceProvider"
+            ],
+            "aliases": {
+                "Miniprogram": "Hogus\\LaravelMiniProgram\\Facade\\Miniprogram"
+            }
+        }
+    }
+}
