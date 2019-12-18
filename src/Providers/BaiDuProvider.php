@@ -21,7 +21,13 @@ class BaiDuProvider extends AbstractProvider implements ProviderInterface
             'code' => $code,
         ];
 
-        return $this->httpPost('https://spapi.baidu.com/oauth/jscode2sessionkey', $params);
+        return $this->httpPost(
+            'https://spapi.baidu.com/oauth/jscode2sessionkey',
+            $params,
+            [
+                'content-type' => 'application/x-www-form-urlencoded'
+            ]
+        );
     }
 
     /**
