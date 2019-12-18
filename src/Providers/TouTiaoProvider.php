@@ -13,6 +13,7 @@ class TouTiaoProvider extends AbstractProvider implements ProviderInterface
      * jscode2session
      *
      * @param string $code
+     * @param string|null $anonymous_code
      *
      * @see https://developer.toutiao.com/dev/cn/mini-app/develop/server/log-in/code2session
      *
